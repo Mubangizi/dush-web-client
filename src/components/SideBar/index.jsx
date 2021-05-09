@@ -25,8 +25,8 @@ const SideBar = () => {
           <NavLink to={{ pathname: `/` }} exact={true}>
             Dashboard
           </NavLink>
-          <NavLink to={{ pathname: `/about` }}>Send</NavLink>
-          <NavLink to={{ pathname: `/resume` }}>Deposit</NavLink>
+          <NavLink to={{ pathname: `/send` }}>Send</NavLink>
+          <NavLink to={{ pathname: `/deposit` }}>Deposit</NavLink>
         </div>
       </div>
       {/* <div className="SideControllerBtn">

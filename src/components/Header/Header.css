@@ -25,5 +25,14 @@
 
 .HeaderContent .Logo img{
     height: 4rem;
+}
 
+.UserInfo .MuiButtonBase-root{
+    height: 4rem;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+}
+
+.UserInfo .MuiButtonBase-root:hover{
+    border: 1px solid #000;
 }
