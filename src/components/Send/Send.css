@@ -1,0 +1,22 @@
+
+.SendComponent{
+    display: flex;
+    justify-content: center;
+}
+.SendForm{
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+    width: 20rem;
+}
+
+.MainButton.MuiButtonBase-root{
+    background-color: var(--color-background-dark);
+    color: white;
+    padding:9px;
+}
+
+.MainButton.MuiButtonBase-root:hover{
+    background-color: var(--color-background-dark);
+    opacity: 0.8;
+}
