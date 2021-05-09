@@ -2,14 +2,15 @@ import { Button, TextField } from "@material-ui/core";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
-import "./LoginPage.css";
 
-const LoginPage = () => {
+const SignupPage = () => {
   const [values, setValues] = useState({
     email: "",
     password: "",
+    confirmPassword: "",
+    username: "",
   });
-  const { email, password } = values;
+  const { userName, email, password, confirmPassword } = values;
 
   const handleChange = (name) => (event) => {
     setValues({ ...values, [name]: event.target.value });
@@ -25,12 +26,22 @@ const LoginPage = () => {
       <div className="LoginCard">
         <div className="LoginItems">
           <div className="LoginCardHeader">
+            <h1>Register</h1>
             <Link to="/">
               <img src={Logo} alt="" />
             </Link>
-            <h1>Login</h1>
           </div>
           <form action="" onSubmit={handleSubmit} className="LoginForm">
+            <TextField
+              id="outlined-error"
+              label="Username"
+              variant="outlined"
+              name="username"
+              required="true"
+              type="text"
+              value={userName}
+              onChange={handleChange("userName")}
+            />
             <TextField
               id="outlined-error"
               label="Email"
@@ -51,13 +62,23 @@ const LoginPage = () => {
               value={password}
               onChange={handleChange("password")}
             />
+            <TextField
+              id="outlined-error"
+              label="Confirm Password"
+              variant="outlined"
+              name="confirmPassword"
+              required="true"
+              type="password"
+              value={confirmPassword}
+              onChange={handleChange("confirmPassword")}
+            />
             <Button type="Submit" className="LoginButton">
-              Login
+              Create Account
             </Button>
           </form>
           <div className="LoginFooter">
-            <p>If you dont have an account,</p>
-            <Link to="/signup">Register</Link>
+            <p>Already have an account,</p>
+            <Link to="/login">Login</Link>
           </div>
         </div>
       </div>
@@ -65,4 +86,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SignupPage;
