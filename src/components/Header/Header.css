@@ -1,0 +1,26 @@
+.Header{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-background-dark);
+}
+.HeaderContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.Header .MuiButtonBase-root {
+    border-radius: 3px;
+    padding: 5px;
+}
+.Header .MuiSvgIcon-root{
+    font-size: 3rem;
+    
+}
+
+.HeaderContent .Logo img{
+    height: 4rem;
+
+}

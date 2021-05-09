@@ -1,14 +1,14 @@
 import React from "react";
 import "./Home.css";
-import { HomeLayout } from "../Layout";
+import Layout from "../Layout";
 
 function Home() {
   return (
-    <HomeLayout>
+    <Layout>
       <div className="Container">
         <div className="HomeMainContent">Hello</div>
       </div>
-    </HomeLayout>
+    </Layout>
   );
 }
 
