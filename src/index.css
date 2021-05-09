@@ -1,0 +1,34 @@
+html {
+  --color-background: #191d2b;
+  --color-background-dark: #10121b;
+  --color-background-light: #2e344e;
+  --color-primary: #a4acc4;
+  --color-blue: #007bff;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: var(--color-background-dark); */
+  color: var(--color-background-dark);
+  font-family: Nunito, sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+@media (max-width: 370px){
+  h1 {
+    font-size: 37px;
+  }
+  p {
+    font-size: 15px;
+  }
+  
+}
