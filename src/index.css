@@ -2,8 +2,10 @@ html {
   --color-background: #191d2b;
   --color-background-dark: #10121b;
   --color-background-light: #2e344e;
+  --color-secondary: #0B183F;
   --color-primary: #a4acc4;
   --color-blue: #1F6CD6;
+  --color-green: #3CF16F;
 }
 
 body {
@@ -11,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: var(--color-background-dark); */
-  color: var(--color-background-dark);
+  color: var(--color-secondary);
   font-family: Nunito, sans-serif;
 }
 
