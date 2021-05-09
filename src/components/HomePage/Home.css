@@ -1,47 +1,48 @@
 .HomeMainContent {
   min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   z-index: 1;
+  padding: 10px;
+  gap:10px;
+
+}
+.ContentItem{
+  border-left: 1px solid var(--color-primary);
+  padding: 10px;
 }
 
 .HomeMainContent h1 {
   margin: 0;
-  color: white;
 }
 
-p {
-  line-height: 30px;
+.ContentContainer{
+  /* -webkit-box-shadow: 0px 11px 20px -7px rgba(0,0,0,0.21);
+  -moz-box-shadow: 0px 11px 20px -7px rgba(0,0,0,0.21);
+  box-shadow: 0px 11px 20px -7px rgba(0,0,0,0.21); */
+  border: 1px solid var(--color-primary);
 }
 
-.MySocial {
+.InfoSection h1{
+  text-align: center;
+}
+
+.BalanceInfo{
   display: flex;
-  align-items: center;
+  gap: 10px;
+  width: 100%;
   justify-content: center;
-  gap: 20px;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+.BalanceInfo .Balance{
+  font-size: 1.3rem;
+}
+.BalanceInfo .BalanceValue{
+  font-size: 3rem;
+  margin-left: 40px;
 }
 
-@media (max-width: 590px){
-  .MySocial {
-    margin-top: 20px;
-  }
-}
-
-.MySocial .MuiButtonBase-root {
-  border-radius: 999px;
-  padding: 0;
-}
-
-.MySocial img {
-  width: 40px;
-  height: 40px;
-  transition: 0.2s ease-in-out;
-}
-
-.MySocial img:hover {
-  transform: scale(1.4);
+.BalanceInfo .BalanceCurrency{
+  font-size: 1.8rem;
 }
